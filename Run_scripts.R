@@ -57,4 +57,3 @@ source("Plot.R")
   
 ### Writing the output with actual and forecast values
 write.csv(output, paste(store,'_forecast.csv',sep=""), row.names = FALSE)
-
