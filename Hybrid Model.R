@@ -1,5 +1,4 @@
 ### Forecast Loop
-
 final=NULL
 calendar <- tibble(Date = seq.Date(from=as.Date("2014-01-01"), to=as.Date("2017-08-01"), "months"))
 
