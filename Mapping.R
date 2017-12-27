@@ -1,4 +1,5 @@
 ### Geo Mapping
+
   head(geo)
   lettura_geo <- left_join(lettura, geo, by = c("Country" = "CountryGA"))
   
@@ -7,6 +8,7 @@
 
 
 ### Channel Mapping
+  
   medium <- read.csv(paste(loc, "/channelmapping.csv",sep=""), stringsAsFactors = FALSE, sep=";")
   lettura_geo_medium <- left_join(lettura_geo, medium, by=c("Medium" = "mediumGA")) %>% rename("Mezzi"="mezzi")
   
