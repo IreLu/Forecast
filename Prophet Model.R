@@ -1,6 +1,5 @@
 Mesi <- input %>% summarise(Mesi=n())
 
-
 ### 1) Without Log transf.
   rename_input <- input %>% rename(ds=Date, y=Sessions)
   nest_input <- rename_input %>% nest()
