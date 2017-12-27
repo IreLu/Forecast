@@ -9,3 +9,6 @@ We use daily data of Google Analytics from unsampled reports so defined *| Date 
 - **Hybrid Model** builds a predictor combining Arima and Ets models
 - **Prophet Model** uses the *prophet* predictor implemented by Facebook
 - **Plot** gives back a plot for Country. Each plot is a grid with forecast plots by Channels.
+
+In a second moment, one of the stakeholders asked for the forecasts of the Mobile Quotas of traffic. So, we computed the history of Mobile Quotas for each Country and made predictions. Then we calculated the Month over Month rate of growth for the coming months and applied these rates to the last Quotas saved at Country and Medium level. All these passeges are within the script **Forecast Quote Mobile**.
+In **Quote Store** we determine the Mobile Quotas traffic aggregated for Store.
